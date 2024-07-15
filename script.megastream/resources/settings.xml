@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<settings version="1">
+	<section id="script.megastream">
+        <category id="general" label="30001">
+            <group id="1" label="30001">
+                <setting id="webaddress" label="30002" type="string">
+                    <level>0</level>
+                    <default>127.0.0.1</default>
+                    <constraints>
+                        <allowempty>false</allowempty>
+                    </constraints>
+                    <control type="edit" format="string">
+                        <heading>30002</heading>
+                    </control>
+                </setting>
+                <setting id="webport" label="30003" type="integer">
+                    <level>0</level>
+                    <default>3456</default>
+                    <constraints>
+                        <minimum>1024</minimum>
+                        <step>1</step>
+                        <maximum>65535</maximum>
+                    </constraints>
+                    <control type="edit" format="integer">
+                        <heading>30003</heading>
+                    </control>
+                </setting>
+                <setting id="megasid" label="30004" type="string">
+                    <level>0</level>
+                    <default>0</default>
+                    <constraints>
+                        <allowempty>false</allowempty>
+                    </constraints>
+                    <control type="edit" format="string">
+                        <heading>30004</heading>
+                    </control>
+                </setting>
+            </group>
+        </category>
+    </section>
+</settings>

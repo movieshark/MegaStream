@@ -13,9 +13,9 @@
                         <heading>30002</heading>
                     </control>
                 </setting>
-                <setting id="webport" label="30003" type="integer">
+                <setting id="minport" label="30003" type="integer">
                     <level>0</level>
-                    <default>3456</default>
+                    <default>50000</default>
                     <constraints>
                         <minimum>1024</minimum>
                         <step>1</step>
@@ -25,14 +25,26 @@
                         <heading>30003</heading>
                     </control>
                 </setting>
-                <setting id="megasid" label="30004" type="string">
+                <setting id="maxport" label="30004" type="integer">
+                    <level>0</level>
+                    <default>60000</default>
+                    <constraints>
+                        <minimum>1024</minimum>
+                        <step>1</step>
+                        <maximum>65535</maximum>
+                    </constraints>
+                    <control type="edit" format="integer">
+                        <heading>30004</heading>
+                    </control>
+                </setting>
+                <setting id="megasid" label="30005" type="string">
                     <level>0</level>
                     <default>0</default>
                     <constraints>
                         <allowempty>false</allowempty>
                     </constraints>
                     <control type="edit" format="string">
-                        <heading>30004</heading>
+                        <heading>30005</heading>
                     </control>
                 </setting>
             </group>

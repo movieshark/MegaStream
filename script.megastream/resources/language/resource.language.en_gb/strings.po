@@ -25,9 +25,13 @@ msgid "Web Bind Address"
 msgstr ""
 
 msgctxt "#30003"
-msgid "Web Port"
+msgid "Minimum Web Port"
 msgstr ""
 
 msgctxt "#30004"
+msgid "Maximum Web Port"
+msgstr ""
+
+msgctxt "#30005"
 msgid "Mega SID"
 msgstr ""

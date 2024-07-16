@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.megastream" name="MegaStream" version="0.7.0" provider-name="MrDini123">
+<addon id="script.megastream" name="MegaStream" version="0.7.1" provider-name="MrDini123">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.12.4"/>
         <import addon="script.module.pycryptodome" version="3.4.3"/>
         <import addon="script.module.bottle" version="0.12.18"/>
     </requires>
-    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">MegaStream</summary>
         <description lang="en">Streams content from mega.nz</description>

@@ -11,7 +11,7 @@ from .constants import MEGA_API
 
 def get_file_info(url, headers, sid=None, proxy=None):
     match_url = match(
-        r"^https?://mega(?:\.co)?\.nz/file/([A-Za-z0-9_-]+)[#!]([A-Za-z0-9_-]+)$",
+        r"^https?://mega(?:\.co)?\.nz/(?:file|embed)/([A-Za-z0-9_-]+)[#!]([A-Za-z0-9_-]+)$",
         url,
     )
     if not match_url:
